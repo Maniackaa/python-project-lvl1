@@ -1,8 +1,10 @@
-name: hello-world
+name: hello-world and lint
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - run: make say-hello
-      - run: echo 'kjjhvv'
+      - run: make lint
