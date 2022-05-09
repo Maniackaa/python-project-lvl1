@@ -1,0 +1,8 @@
+name: hello-world
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make say-hello
+      - run: echo 'kjjhvv'
