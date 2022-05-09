@@ -7,3 +7,4 @@
 ![example workflow](https://github.com/Maniackaa/python-project-lvl1/actions/workflows/lint.yml/badge.svg)
 
 https://asciinema.org/a/wryMeCYNgfV8nJwPG8IClgZsa
+https://asciinema.org/a/mfKN1joRZLtZyiKlNBPyf4Kx4
