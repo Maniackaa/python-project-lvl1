@@ -1,12 +1,11 @@
-name: hello-world and lint
+name: lint
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  check lint:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: make say-hello
       - name: Install dependencies
         run: |
           pip install poetry
