@@ -1,7 +1,7 @@
 name: lint
 on: [push]
 jobs:
-  check lint:
+  check_lint:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
