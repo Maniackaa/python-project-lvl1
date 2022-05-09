@@ -19,3 +19,7 @@ make lint:
 say-hello:
 		echo 'Hello, World!'
 
+upload:
+		git add .
+		git commit -m 'test'
+		git push

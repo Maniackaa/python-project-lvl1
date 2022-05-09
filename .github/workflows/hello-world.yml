@@ -7,4 +7,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: make say-hello
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
       - run: make lint
