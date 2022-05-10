@@ -30,7 +30,7 @@ def welcome_user():
 
 
 def question():
-    lenght_progression = randint(3, 15)
+    lenght_progression = randint(5, 15)
     step_progression = randint(2, 5)
     first_item = randint(1, 10)
     hidden_item = randint(2, lenght_progression)
