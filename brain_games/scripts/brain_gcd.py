@@ -24,7 +24,7 @@ def welcome_user():
     import prompt
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ', name)
+    print('Hello, ' + name + '!')
     print('Find the greatest common divisor of given numbers.')
     return name
 

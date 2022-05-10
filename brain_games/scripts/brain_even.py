@@ -16,14 +16,14 @@ def main():
         print(f'Congratulations, {name}!')
     elif count == 5:
         print(f'\'{a}\' это не верный ответ ;( Верный ответ это - \'{q}\'.')
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
 
 
 def welcome_user():
     import prompt
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ', name)
+    print('Hello, ' + name + '!')
     print('What number is missing in the progression?')
     return name
 
