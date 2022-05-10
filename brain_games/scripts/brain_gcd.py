@@ -17,7 +17,7 @@ def game():
         print(f'Congratulations, {name}!')
     elif count == 5:
         print(f'\'{a}\' это не верный ответ ;( Верный ответ это - \'{q}\'.')
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
 
 
 def welcome_user():
