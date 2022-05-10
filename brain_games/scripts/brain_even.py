@@ -13,7 +13,7 @@ def main():
         else:
             count = 5
     if count == 3:
-        print(f'Congratulations, {name} !')
+        print(f'Congratulations, {name}!')
     elif count == 5:
         print(f'\'{a}\' это не верный ответ ;( Верный ответ это - \'{q}\'.')
         print(f"Let's try again, {name}")
