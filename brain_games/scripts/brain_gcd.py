@@ -10,7 +10,7 @@ def game():
         a = answer()
         if is_answer_correct(q, a):
             count += 1
-            print('Correct')
+            print('Correct!')
         else:
             count = 5
     if count == 3:

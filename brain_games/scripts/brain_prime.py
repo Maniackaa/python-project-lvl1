@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-from random import randint
 
 
 def game():
@@ -14,7 +13,7 @@ def game():
         else:
             count = 5
     if count == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name} !')
     elif count == 5:
         print(f'\'{a}\' это не верный ответ ;( Верный ответ это - \'{q}\'.')
         print(f"Let's try again, {name}")
@@ -25,34 +24,32 @@ def welcome_user():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, ', name)
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     return name
 
 
 def question():
-    print('What is the result of the expression?')
-    a = randint(0, 10)
-    sign = randint(1, 3)
-    b = randint(0, 10)
-    if sign == 1:
-        sign_sym = '+'
-        correct_answer = a + b
-    elif sign == 2:
-        sign_sym = '-'
-        correct_answer = a - b
-    elif sign == 3:
-        sign_sym = '*'
-        correct_answer = a * b
-    print(f'Question: {a} {sign_sym} {b}')
+    from random import randint
+    item = randint(3, 100)
+    i = 2
+    correct_answer = 'yes'
+    while i <= item / 2:
+        if item % i == 0:
+            correct_answer = 'no'
+        i += 1
+    print(f'Question: {item}')
     return correct_answer
 
 
 def answer():
-    answer = input('Your answer(число): ')
-    return int(answer)
+    return input('Your answer: ')
 
 
 def is_answer_correct(question, answer):
-    return True if question == answer else False
+    if question == answer:
+        return True
+    else:
+        return False
 
 
 if __name__ == '__main__':
